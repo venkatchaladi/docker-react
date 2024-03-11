@@ -5,5 +5,9 @@ RUN npm install
 COPY . .
 RUN npm run build
 
+
 FROM nginx
-COPY --from=builder /goodone/build /usr/share/nginx/html
+COPY --from=builder /goodone/build /usr/share/nginx/htmli
+
+--FROM=builder RUN npm run test
+
