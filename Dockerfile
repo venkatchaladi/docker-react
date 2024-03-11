@@ -9,5 +9,5 @@ RUN npm run build
 FROM nginx
 COPY --from=builder /goodone/build /usr/share/nginx/htmli
 
---FROM=builder RUN npm run test
+RUN npm run test -- --coverage 
 
