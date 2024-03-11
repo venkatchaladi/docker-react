@@ -2,8 +2,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - docker build -t docker-react-app .
+      - docker build -t $projectname .
       
-      - docker run docker-react-app npm run test 
+      - docker run $projectname npm run test 
 
   
