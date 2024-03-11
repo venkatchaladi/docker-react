@@ -6,4 +6,6 @@ phases:
     commands:
       - docker build -t docker-react-app .
 
-  
+  build:
+    commands:
+      - docker run docker-react-app
