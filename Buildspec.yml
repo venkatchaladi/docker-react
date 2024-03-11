@@ -4,7 +4,6 @@ phases:
 
   pre_build:
     commands:
-      - sudo service docker start
       - docker build -t docker-react-app .
 
   build:
