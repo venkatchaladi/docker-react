@@ -3,6 +3,6 @@ phases:
   build:
     commands:
       - docker build -t docker-react-app .
-  post-build:
+  post_build:
     commands:
       - docker run docker-react-app npm run test -- --coverage 
