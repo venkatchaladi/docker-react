@@ -1,0 +1,8 @@
+version : 2.0
+phases:
+  build:
+    commands:
+      - docker build -t docker-react-app .
+  post-build:
+    commands:
+      - docker run docker-react-app npm run test -- --coverage 
