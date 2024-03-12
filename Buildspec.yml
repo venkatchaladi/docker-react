@@ -8,4 +8,4 @@ phases:
 
   post_build:
     commands:
-      - docker run -it docker-react-app
+      - docker run -d docker-react-app
