@@ -2,10 +2,10 @@ version: 0.2
 
 phases:
 
-  pre_build:
+  build:
     commands:
       - docker build -t docker-react-app .
 
-  build:
+  post_build:
     commands:
       - docker run -it docker-react-app
