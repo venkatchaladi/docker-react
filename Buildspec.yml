@@ -4,8 +4,12 @@ phases:
 
   pre_build:
     commands:
-      - docker build -t docker-react-app .
-
+      - npm install
   build:
     commands:
-      - docker run -it docker-react-app
+      - docker build -t docker-react-app .
+
+  post_build:
+    commands:
+      - docker run docker-react-app npm run test
+      - docker images
