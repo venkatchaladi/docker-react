@@ -2,8 +2,9 @@ version: 0.2
 
 phases:
 
-  pre_build:
+  build:
     commands:
+<<<<<<< HEAD
       - npm install
   build:
     commands:
@@ -13,3 +14,10 @@ phases:
     commands:
       - docker run docker-react-app npm run test
       - docker images
+=======
+      - docker build -t docker-react-app .
+
+  post_build:
+    commands:
+      - docker run -d docker-react-app
+>>>>>>> a5cfed140505d74473832bbd7db3c369e445fa13

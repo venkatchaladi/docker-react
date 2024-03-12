@@ -9,4 +9,4 @@ RUN npm run build
 FROM nginx
 COPY --from=builder /goodone/build /usr/share/nginx/htmli
 
-
+CMD ["npm","run","test"]
