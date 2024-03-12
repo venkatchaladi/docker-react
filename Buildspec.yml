@@ -2,9 +2,9 @@ version: 0.2
 
 phases:
 
-  build:
+  install:
     commands:
-      - npm install
+      - npm install -g
   build:
     commands:
       - docker build -t docker-react-app .
