@@ -3,6 +3,8 @@ version: 0.2
 phases:
 
   install:
+    required-environment:
+      - nodejs:16
     commands:
       - npm install -g
   build:
