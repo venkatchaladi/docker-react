@@ -8,4 +8,4 @@ phases:
 
   build:
     commands:
-      - docker run docker-react-app
+      - docker run -it docker-react-app
