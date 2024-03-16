@@ -8,5 +8,8 @@ phases:
 
   post_build:
     commands:
-      - docker run -d docker-react-app 
+      - docker run -d docker-react-app
 
+artifacts:
+  files:
+    - "*/**"
