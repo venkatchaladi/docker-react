@@ -7,7 +7,5 @@ RUN npm run build
 
 
 FROM nginx
-EXPOSE 80
 COPY --from=builder /goodone/build /usr/share/nginx/htmli
 
-CMD ["npm","run","test"]
